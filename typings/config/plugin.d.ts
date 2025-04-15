@@ -1,27 +1,23 @@
-// This file is created by egg-ts-helper@3.1.1
+// This file is created by egg-ts-helper@2.1.1
 // Do not modify this file!!!!!!!!!
 /* eslint-disable */
 
 import 'egg';
-import '@eggjs/onerror';
-import '@eggjs/session';
-import '@eggjs/i18n';
-import '@eggjs/watcher';
-import '@eggjs/multipart';
-import '@eggjs/security';
-import '@eggjs/development';
-import '@eggjs/logrotator';
-import '@eggjs/schedule';
-import '@eggjs/static';
-import '@eggjs/jsonp';
-import '@eggjs/view';
-import '@eggjs/tegg-plugin';
-import '@eggjs/tegg-config';
-import '@eggjs/tegg-controller-plugin';
-import '@eggjs/tegg-schedule-plugin';
-import '@eggjs/tegg-eventbus-plugin';
-import '@eggjs/tegg-aop-plugin';
-import '@eggjs/tracer';
+import 'egg-onerror';
+import 'egg-session';
+import 'egg-i18n';
+import 'egg-watcher';
+import 'egg-multipart';
+import 'egg-security';
+import 'egg-development';
+import 'egg-logrotator';
+import 'egg-schedule';
+import 'egg-static';
+import 'egg-jsonp';
+import 'egg-view';
+import 'egg-mongoose';
+import 'egg-validate';
+import 'egg-cors';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -37,12 +33,8 @@ declare module 'egg' {
     static?: EggPluginItem;
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
-    tegg?: EggPluginItem;
-    teggConfig?: EggPluginItem;
-    teggController?: EggPluginItem;
-    teggSchedule?: EggPluginItem;
-    eventbusModule?: EggPluginItem;
-    aopModule?: EggPluginItem;
-    tracer?: EggPluginItem;
+    mongoose?: EggPluginItem;
+    validate?: EggPluginItem;
+    cors?: EggPluginItem;
   }
 }
